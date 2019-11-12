@@ -1,0 +1,31 @@
+            // counter
+            var minutes, seconds;
+            var fontSize = 50;
+            var d1 = new Date();
+
+            document.getElementById("demo").innerHTML = d1;
+
+            setInterval(function(){
+                var d2 = new Date();
+
+                minutes = Math.floor((d2 - d1) / 1000 / 60 );
+                seconds = Math.floor((d2 - d1) / 1000 % 60 );
+
+                if (minutes >= 1){
+                    console.log("seconds:"+seconds);
+                    console.log("minutes"+minutes);
+                    fontSize = 30 + seconds + 60*(minutes-1);
+                    console.log("fontSize"+fontSize);
+                    document.getElementById("demo").style.color = "Crimson";
+                    document.getElementById("demo").style.fontSize = fontSize+"pt";
+                }
+
+                var str;
+
+                if (seconds < 10)
+                    str = '0' + seconds;
+                else
+                    str = seconds;
+                
+                document.getElementById("demo").innerHTML = '0' +  minutes + ':' + str;
+            }, 100);

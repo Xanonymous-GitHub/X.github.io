@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/beige.css" id="theme"> <!-- black blood league moon night serif simple sky solarized white -->
+
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- 分隔線 -->
+				<section>
+					<h1>Harry Potter</h1>
+					<h2>The Philosopher's Stone</h2>
+					<p style="font-size: small;">
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<!-- 分隔線 -->
+				<section>Slide 1</section>
+
+				<!-- 分隔線 -->
+				<section>Slide 2</section>
+
+				<!-- 分隔線 -->
+				<section>Slide 3
+					<section>3-1</section>
+					<section>3-2</section>
+					<section>3-3</section>
+				</section>
+
+				<!-- 分隔線 -->
+				<section>Slide 4</section>
+
+				<!-- 分隔線 -->
+				<section>
+					<h1>The End</h1>
+				</section>
+
+				<!-- 分隔線 -->
+				<section>
+					<h3 style="margin-top: -200px">Acknowledgement</h3>
+					<ul>
+						<li>Special thanks to ...</li>
+						<li>Crediting ...</li>
+						<li>Image courtesy of 
+							<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@amosbarzeev?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Amos Bar-Zeev"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Amos Bar-Zeev</span></a>
+						</li>
+						<li>Photo by Amos Bar-Zeev on Unsplash</li>
+						<li><a href="https://unsplash.com/photos/hVk6pIFbW9o">Nahariyya, Israel</a></li>
+					</ul>
+				</section>
+
+				<!-- 分隔線 -->
+				<section data-background="images/108820003.jpg"></section>
+
+				<section> 新的一頁 a new page  </section>
+
+				<!-- 分隔線 -->
+				<section>
+					<h3 style="margin-top: -100px">About Me</h3>
+					<ul>
+						<li>I am a student from Paris, France.</li>
+						<li>I love sailing.	</li>
+						<li>My favorite musician is Mozart.</li>
+						<li>My favorite color is <input value="blue" type="text" style="font-size: 30pt"> .</li>
+						<li>...</li>
+					</ul>
+				</section>
+				<!-- 分隔線 -->
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
